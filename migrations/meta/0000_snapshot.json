@@ -1,0 +1,73 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "usuarios": {
+      "name": "usuarios",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nombre": {
+          "autoincrement": false,
+          "name": "nombre",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "contraseña": {
+          "autoincrement": false,
+          "name": "contraseña",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "correo": {
+          "autoincrement": false,
+          "name": "correo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "telefono": {
+          "autoincrement": false,
+          "name": "telefono",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fecha_registro": {
+          "default": "(datetime('now', '-5 hours'))",
+          "autoincrement": false,
+          "name": "fecha_registro",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "n documento": {
+          "autoincrement": false,
+          "name": "n documento",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
